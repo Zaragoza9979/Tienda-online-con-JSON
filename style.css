@@ -1,0 +1,30 @@
+/* Estilos personalizados para ZETA Tienda */
+body {
+    background-color: #020617;
+    color: #f8fafc;
+}
+
+/* Efecto suave para las tarjetas de productos */
+#product-grid > div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product-grid > div:hover {
+    transform: translateY(-4px);
+    box-init: 0 10px 25px -5px rgba(239, 68, 68, 0.15);
+}
+
+/* Scrollbar personalizado para el modal */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}

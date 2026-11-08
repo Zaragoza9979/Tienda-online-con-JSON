@@ -1,0 +1,145 @@
+[
+    {
+        "id": "p1",
+        "name": "Mad max: Furia en la carretera",
+        "description": "Edición coleccionista en disco 4K Ultra HD con sonido Dolby Atmos.",
+        "price": 24.99,
+        "stock": 12,
+        "category": "Acción",
+        "image": "images/Mad max.jpg"
+    },
+    {
+        "id": "p2",
+        "name": "The Batman - Steelbook Edición Limitada",
+        "description": "Caja metálica exclusiva con contenido adicional y postales coleccionables.",
+        "price": 31.50,
+        "stock": 5,
+        "category": "Acción",
+        "image": "images/the batman.jpg"
+    },
+    {
+        "id": "p3",
+        "name": "John Wick 4 (Blu-ray)",
+        "description": "La última entrega de la saga de acción definitiva en alta definición.",
+        "price": 19.99,
+        "stock": 8,
+        "category": "Acción",
+        "image": "images/john-wick-4.jpg"
+    },
+    {
+        "id": "p4",
+        "name": "Top Gun: Maverick (4K Ultra HD)",
+        "description": "Secuela de acción aérea con calidad de imagen de referencia.",
+        "price": 22.95,
+        "stock": 15,
+        "category": "Acción",
+        "image": "images/top-gun-maverick.jpg"
+    },
+    {
+        "id": "p5",
+        "name": "Gladiator - Edición Aniversario",
+        "description": "La obra maestra épica de Ridley Scott remasterizada en 4K.",
+        "price": 18.50,
+        "stock": 0,
+        "category": "Acción"
+        
+    },
+    {
+        "id": "p6",
+        "name": "El Padrino - Trilogía Restaurada",
+        "description": "Las tres películas fundamentales de Francis Ford Coppola en Blu-ray.",
+        "price": 39.99,
+        "stock": 7,
+        "category": "Clásicos",
+        "image": "images/el-padrino.jpg"
+    },
+    {
+        "id": "p7",
+        "name": "Pulp Fiction (Steelbook Edición 30 Aniversario)",
+        "description": "El clásico de Quentin Tarantino en una edición metálica única.",
+        "price": 25.00,
+        "stock": 4,
+        "category": "Clásicos",
+        "image": "images/pulp-fiction.jpg"
+    },
+    {
+        "id": "p8",
+        "name": "Forrest Gump - Edición Remasterizada",
+        "description": "La emotiva historia de Robert Zemeckis con extras inéditos.",
+        "price": 15.99,
+        "stock": 10,
+        "category": "Clásicos",
+        "image": "images/forrest-gump.jpg"
+    },
+    {
+        "id": "p9",
+        "name": "Blade Runner: Director's Cut",
+        "description": "La joya de la ciencia ficción de Ridley Scott en alta definición.",
+        "price": 17.50,
+        "stock": 6,
+        "category": "Clásicos",
+        "image": "images/blade-runner.jpg"
+    },
+    {
+        "id": "p10",
+        "name": "Casablanca - Edición Coleccionista 75 Aniversario",
+        "description": "El clásico atemporal del cine negro y romántico en formato físico.",
+        "price": 14.99,
+        "stock": 0,
+        "category": "Clásicos"
+    },
+    {
+        "id": "p11",
+        "name": "El Exorcista - Versión del Director",
+        "description": "La película de terror más influyente de todos los tiempos.",
+        "price": 16.99,
+        "stock": 9,
+        "category": "Terror",
+        "image": "images/el-exorcista.jpg"
+    },
+    {
+        "id": "p12",
+        "name": "La Cosa (The Thing) - Edición Coleccionista 4K",
+        "description": "El clásico de terror y ciencia ficción de John Carpenter.",
+        "price": 27.99,
+        "stock": 3,
+        "category": "Terror",
+        "image": "images/la-cosa.jpg"
+    },
+    {
+        "id": "p13",
+        "name": "Hereditary (Blu-ray)",
+        "description": "La perturbadora obra maestra del terror contemporáneo de A24.",
+        "price": 18.00,
+        "stock": 11,
+        "category": "Terror",
+        "image": "images/hereditary.jpg"
+    },
+    {
+        "id": "p14",
+        "name": "Alien: El Octavo Pasajero (4K UHD)",
+        "description": "El terror espacial definitivo restaurado directamente desde el negativo original.",
+        "price": 24.50,
+        "stock": 14,
+        "category": "Terror",
+        "image": "images/alien el octavo pasajero.jpg"
+    },
+    {
+        "id": "p15",
+        "name": "El Resplandor (4K Ultra HD)",
+        "description": "La obra maestra de Stanley Kubrick adaptada de la novela de Stephen King.",
+        "price": 22.00,
+        "stock": 8,
+        "category": "Terror",
+        "image": "images/el resplandor.jpg"
+    },
+    {
+        "id": "p16",
+        "name": "Interstellar (4K Ultra HD + Blu-ray)",
+        "description": "La travesía espacial de Christopher Nolan con pista de sonido IMAX.",
+        "price": 26.99,
+        "stock": 13,
+        "category": "Acción",
+        "image": "images/interstellar.jpg"
+    }
+]

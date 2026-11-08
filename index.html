@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZETA - Tienda de Blu-ray y 4K</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans">
+    
+    <!-- Cabecera de la tienda -->
+    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-40 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            
+            <!-- Título centrado en móviles -->
+            <h1 class="text-2xl font-black tracking-wider text-red-500 flex items-center gap-2 text-center sm:text-left">
+                ZETA-Tu tienda de <span class="text-xs bg-red-600/20 text-red-400 px-2 py-0.5 rounded border border-red-500/30">4K & Blu-ray</span>
+            </h1>
+
+            <!-- Botones de navegación -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleJsonModal()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-2 rounded-xl text-sm font-medium transition"> 
+                    📁 Ver JSONs
+                </button>
+                <button onclick="toggleCartModal()" class="relative bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-xl flex items-center gap-2 font-medium transition shadow-lg shadow-red-900/20">
+                    <span>🛒 Cesta</span>
+                    <span id="cart-counter" class="absolute -top-2 -right-2 bg-amber-500 text-slate-950 font-bold text-xs w-6 h-6 rounded-full flex items-center justify-center border-2 border-slate-900">0</span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-1 w-full text-center">
+        
+        <!-- Título de sección centrado -->
+        <h2 class="text-3xl font-extrabold mb-6 text-white">Catálogo de Películas</h2>
+
+        <!-- Filtros centrados -->
+        <div id="category-filters" class="flex flex-wrap justify-center items-center gap-3 mb-10">
+            <button onclick="filtercategory('todos')" class="filter-btn active px-5 py-2.5 rounded-xl font-medium text-sm transition bg-red-600 text-white shadow-md">
+                Todo
+            </button>
+        </div>
+
+        <!-- Productos -->
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-left">
+            <!-- JavaScript inyectará las tarjetas aquí -->
+        </div>
+
+    </main>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl w-full max-w-2xl max-h-[90vh] flex flex-col shadow-2xl">
+            <div class="p-6 border-b border-slate-800 flex justify-between items-center">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <span>🛒</span> Cesta de Compra
+                </h3>
+                <button onclick="toggleCartModal()" class="text-slate-400 hover:text-white text-xl font-bold">✕</button>
+            </div>
+            <div class="bg-slate-800/60 p-4 border-b border-slate-800 text-sm text-slate-300 flex items-center gap-3">
+                <span class="text-xl">📦</span>
+                <span id="user-delivery-info">Cargando datos de envío...</span>
+            </div>
+            <div id="cart-items-container" class="p-6 overflow-y-auto space-y-4 flex-1 divide-y divide-slate-800/60"></div>
+            <div class="p-6 border-t border-slate-800 bg-slate-950/50 rounded-b-3xl">
+                <div class="flex justify-between items-center mb-6">
+                    <span class="text-slate-400 font-medium">Total:</span>
+                    <span id="cart-total" class="text-3xl font-black text-red-500">0.00 €</span>
+                </div>
+                <div class="flex gap-4">
+                    <button onclick="toggleCartModal()" class="flex-1 bg-slate-800 hover:bg-slate-700 text-white py-3 rounded-xl font-medium transition">
+                        Seguir Comprando
+                    </button>
+                    <button onclick="checkout()" class="flex-1 bg-red-600 hover:bg-red-700 text-white py-3 rounded-xl font-bold transition shadow-lg shadow-red-900/30">
+                        Finalizar Compra
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
